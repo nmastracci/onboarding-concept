@@ -1,0 +1,82 @@
+html { 
+  font-size: 62.5%;
+}
+
+:root {
+  --color-back: rgb(63, 61, 86);
+  --color-border:  #1E1717;
+  --color-border-dark: darken(#1E1717, 7%);
+}
+
+body {
+  padding: 0;
+  margin:0;
+  color: var(--color-border-dark)
+}
+
+
+.container {
+  width: 100vw;
+  height:100vh;
+  background-color: var(--color-back);
+}
+
+.welcome {
+  width: 100vw;
+  height:500px;
+  margin-top:100rem;
+}
+
+#background {
+  background-color: lightenvar()
+}
+
+
+
+/* Sine Curve Stuffs */
+
+.curve{
+  margin-bottom: 11rem;
+}
+
+.peak, .valley {
+  border: var(--color-border) 0.4rem solid;
+  border-top: 0.4rem solid var(--color-border-dark);
+  border-radius: 50%;
+  width: 14rem;
+  height: 10.5rem;
+}
+.peak {
+  transform: translate(-44px, 47.65px);
+}
+.valley{
+  transform: rotate(180deg) translate(45px, -62px);
+}
+
+.increase, .decrease {
+  height: 0.4rem - 0.3px;
+  background: var(--color-border-dark);
+  width: 14.9rem;
+  margin-left: 8.975rem;
+  position: relative;
+  z-index: 1;
+}
+
+.increase{
+  transform: rotate(-38.43deg);
+}
+.decrease{
+  transform: rotate(38.43deg);
+  margin-left: 13.5rem;
+}
+
+
+/* single use */
+.absolute {
+  position: absolute;
+}
+
+.tulip {
+  top: 0px;
+  opacity: 1;
+}
